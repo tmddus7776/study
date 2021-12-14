@@ -25,9 +25,9 @@ int main_12()
 	//문자 입출력 라이브러리
 	//1. getchar(): 사용자로부터 문자를 입력받음, putchar(): 사용자로부터 입력받은 문자 출력 -> 문자열 아님. 문자 입출력
 	int ch;
-	//while ((ch = getchar()) != EOF) { //EOF: End Of File -> 정수형이므로 ch를 int형으로 받는다. EOF = ^d(종료)
-	//	putchar(ch); //입력받을 때 엔터를 쳐야 출력됨 -> 키보드로 입력한 문자는 버퍼에 모아서 한번에 출력
-	//}
+	while ((ch = getchar()) != EOF) { //EOF: End Of File -> 정수형이므로 ch를 int형으로 받는다. EOF = ^d(종료)
+		putchar(ch); //입력받을 때 엔터를 쳐야 출력됨 -> 키보드로 입력한 문자는 버퍼에 모아서 한번에 출력
+	}
 	//버퍼를 사용하지 않는 것: _getch(), _putch()
 
 	//2. gets_s(시작주소, 최대입력 크기 할당): 입력, puts():출력
@@ -62,8 +62,8 @@ int main_12()
 	//strncat(s1, s2, n): s2의 최대 n개 문자를 s1의 끝에 붙여넣는다.
 	//strncmp(s1, s2, n): 최대 n개 문자까지 s1과 s2를 비교한다.       ->사이즈를 지정
 	//strchr(s, c): 문자열 s에서 문자 c를 찾는다. -> c의 주솟값을 반환, 없으면 NULL값 반환
-	//strstr(s1, s2): 문자열 s1에서 문자열 s2를 찾는다
-	//strtok(s1, s2): s1을 s2를 기준으로 나눠라
+	//strstr(s1, s2): 문자열 s1에서 문자열 s2를 찾는다.
+	//strtok(s1, s2): s1을 s2를 기준으로 나눠라.
 
 	//문자열 수치변환
 	char str[] = "100";
