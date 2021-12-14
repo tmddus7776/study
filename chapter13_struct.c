@@ -23,9 +23,9 @@ int main()
 	//구조체 변수 선언
 	struct student s1;
 	printf("학번: ");
-	scanf_s("%d", &s1.number); //구조체 멤버 전달
-	//printf("이름: ");
-	//scanf_s("%s", s1.name);
+	scanf("%d", &s1.number); //구조체 멤버 전달
+	printf("이름: ");
+	scanf("%s", s1.name);
 	s1.data.year = 21;
 	s1.data.month = 11;
 	s1.data.day = 2;
